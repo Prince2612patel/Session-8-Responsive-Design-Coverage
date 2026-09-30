@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Task 1: Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Card</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        /* Product Card */
+        .product-card {
+            width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 40%;
+        }
+
+        .product-image img {
+            width: 100%;
+        }
+
+        /* Product Details */
+        .product-details {
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .rating {
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: orange;
+            border: none;
+            color: white;
+        }
+
+
+        /* Task 3: 1200px Breakpoint */
+        @media only screen and (max-width: 1200px) {
+
+            .product-card {
+                padding: 18px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+        }
+
+
+        /* Task 3: 900px Breakpoint */
+        @media only screen and (max-width: 900px) {
+
+            .product-card {
+                width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            .price {
+                font-size: 21px;
+            }
+
+        }
+
+
+        /* Task 2 + Task 3: 600px Breakpoint */
+        @media only screen and (max-width: 600px) {
+
+            /* Horizontal → Vertical */
+            .product-card {
+                width: 90%;
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .product-image {
+                width: 100%;
+            }
+
+            .product-details {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="images/samrtphone1.png" alt="Smartphone">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+
+            <h1>Smartphone 5G</h1>
+
+            <span class="rating">4.5 ★</span>
+
+            <p class="price">₹24,999</p>
+
+            <p>₹29,999 <b>17% OFF</b></p>
+
+            <p>
+                8GB RAM, 128GB Storage, 50MP Camera
+                and powerful 5G processor.
+            </p>
+
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
